@@ -1,0 +1,89 @@
+{
+    "id": "com.rohitchouhan.sap.sweetnotification",
+    "version": "1.0.0",
+    "name": "Sweet Notification",
+    "description": "SAC Custom Widget for beautiful and material design notification for SAP Analytics Cloud Application.",
+    "newInstancePrefix": "SweetNotification",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/SweetNotification\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-sweetnotification",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/SweetNotification@1.0.0\/SweetNotification.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "success": {
+            "description": "A simple notification",
+            "type": "string",
+            "default": ""
+        },
+        "error": {
+            "description": "Error Notification",
+            "type": "string",
+            "default": ""
+        },
+        "info": {
+            "description": "Info Notification",
+            "type": "string",
+            "default": ""
+        },
+        "warning": {
+            "description": "Warning Notification",
+            "type": "string",
+            "default": ""
+        }
+    },
+    "methods": {
+        "showSuccess": {
+            "description": "Set A simple notification",
+            "parameters": [
+                {
+                    "name": "success",
+                    "type": "string",
+                    "description": "A simple notification"
+                }
+            ],
+            "body": "this.success = success;"
+        },
+        "showError": {
+            "description": "Set Error Notification",
+            "parameters": [
+                {
+                    "name": "error",
+                    "type": "string",
+                    "description": "Error Notification"
+                }
+            ],
+            "body": "this.error = error;"
+        },
+        "showInfo": {
+            "description": "Set Info Notification",
+            "parameters": [
+                {
+                    "name": "info",
+                    "type": "string",
+                    "description": "Info Notification"
+                }
+            ],
+            "body": "this.info = info;"
+        },
+        "showWarning": {
+            "description": "Set Warning Notification",
+            "parameters": [
+                {
+                    "name": "warning",
+                    "type": "string",
+                    "description": "Warning Notification"
+                }
+            ],
+            "body": "this.warning = warning;"
+        }
+    },
+    "events": {}
+}
